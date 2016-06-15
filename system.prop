@@ -2,6 +2,10 @@
 # system.prop for gts210ltexx
 #
 
+# Rotate screen 270 degrees
+# Needed on gts210 devices, not on gts28 devices
+ro.sf.hwrotation=270
+
 # RIL
 rild.libargs=-d /dev/ttyS0
 rild.libpath=/system/lib/libsec-ril.so
