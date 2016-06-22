@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5faad753_306e372f",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2016-06-22T16:38:29Z",
+      "side": 1,
+      "message": "Duplicate..\nThis one wasn\u0027t even in the common tree to begin with afaik.",
+      "revId": "4bbfe5374f47c6ebad99daccd3ac0803c7d48b64",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_506bb31c",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2016-06-22T16:38:29Z",
+      "side": 1,
+      "message": "Please remove all the NXP blobs, they will be completely purged from the common tree anyways.",
+      "revId": "4bbfe5374f47c6ebad99daccd3ac0803c7d48b64",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
