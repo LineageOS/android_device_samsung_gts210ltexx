@@ -1,9 +1,26 @@
 ### Bluetooth
+# Split-off for future differences
 vendor/firmware/bcm4358A3_V0062.0104.hcd
 
 ### GPS
+# Binaries differ between T710, T715, T810 and T815
+bin/gpsd
 lib/libwrappergps.so
+lib/hw/gps.default.so:lib/hw/gps.universal5433.so
+
+### Mobicore
+app/mcRegistry/07010000000000000000000000000000.tlbin
+app/mcRegistry/07060000000000000000000000000000.tlbin
+app/mcRegistry/ffffffffd00000000000000000000016.tlbin
 
 ### RIL
-lib/libsecnativefeature.so
 lib/libsec-ril.so
+
+### Wifi
+# Settings differ between T710, T715, T810 and T815
+etc/wifi/nvram_mfg.txt
+etc/wifi/nvram_mfg.txt_4356_a2
+etc/wifi/nvram_mfg.txt_4358_a1
+etc/wifi/nvram_net.txt
+etc/wifi/nvram_net.txt_4356_a2
+etc/wifi/nvram_net.txt_4358_a1
