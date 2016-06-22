@@ -1,9 +1,60 @@
 ### Bluetooth
+# Split-off for future differences
 vendor/firmware/bcm4358A3_V0062.0104.hcd
 
+### Camera
+lib/hw/camera.universal5433.so
+lib/libexynoscamera.so
+lib/libhwjpeg.so
+lib/libsensorlistener.so
+
+### Camera/Ril
+lib/libsecnativefeature.so
+
 ### GPS
+# Binaries differ between T710, T715, T810 and T815
+bin/gpsd
 lib/libwrappergps.so
+lib/hw/gps.default.so:lib/hw/gps.universal5433.so
+
+### Mobicore
+app/mcRegistry/07010000000000000000000000000000.tlbin
+app/mcRegistry/07060000000000000000000000000000.tlbin
+app/mcRegistry/ffffffffd00000000000000000000016.tlbin
+
+### Noise supppression
+# mVoIP WIDEBAND settings differ between T71x and T81x
+vendor/etc/nxp/mVoIP/Rx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt
+vendor/etc/nxp/mVoIP/Rx_ControlParams_WIDEBAND_EARPIECE.txt
+vendor/etc/nxp/mVoIP/Rx_ControlParams_WIDEBAND_SPEAKER.txt
+vendor/etc/nxp/mVoIP/Rx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt
+vendor/etc/nxp/mVoIP/Rx_ControlParams_WIDEBAND_WIRED_HEADSET.txt
+vendor/etc/nxp/mVoIP/Tx_ControlParams_WIDEBAND_BLUETOOTH_SCO_HEADSET.txt
+vendor/etc/nxp/mVoIP/Tx_ControlParams_WIDEBAND_EARPIECE.txt
+vendor/etc/nxp/mVoIP/Tx_ControlParams_WIDEBAND_SPEAKER.txt
+vendor/etc/nxp/mVoIP/Tx_ControlParams_WIDEBAND_WIRED_HEADPHONE.txt
+vendor/etc/nxp/mVoIP/Tx_ControlParams_WIDEBAND_WIRED_HEADSET.txt
+
+### OMX
+lib/omx/libOMX.Exynos.AVC.Encoder.so
 
 ### RIL
-lib/libsecnativefeature.so
 lib/libsec-ril.so
+
+### Sensors
+lib/libyasalgo.so
+lib/hw/sensors.exynos5.so
+
+### Widevine
+vendor/lib/mediadrm/libdrmclearkeyplugin.so
+vendor/lib/mediadrm/libwvdrmengine.so
+vendor/lib/libwvm.so
+
+### Wifi
+# Settings differ between T710, T715, T810 and T815
+etc/wifi/nvram_mfg.txt
+etc/wifi/nvram_mfg.txt_4356_a2
+etc/wifi/nvram_mfg.txt_4358_a1
+etc/wifi/nvram_net.txt
+etc/wifi/nvram_net.txt_4356_a2
+etc/wifi/nvram_net.txt_4358_a1
