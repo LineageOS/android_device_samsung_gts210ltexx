@@ -1,9 +1,5 @@
 LOCAL_PATH := device/samsung/gts210ltexx
 
-# Flat device tree for boot image
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/dtb.img:dt.img
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.baseband.rc
