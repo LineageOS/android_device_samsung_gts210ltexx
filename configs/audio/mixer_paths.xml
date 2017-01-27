@@ -2010,7 +2010,7 @@
 		<!-- media input volume -->
 		<path name="gain-media-mic">
 			<ctl name="IN1L Volume" value="30" />
-			<ctl name="IN1L Digital Volume" value="128" />
+			<ctl name="IN1L Digital Volume" value="150" />
 			<ctl name="LHPF1 Input 1 Volume" value="32" />
 		</path>
 
@@ -2034,7 +2034,7 @@
 		<!-- camcorder input volume -->
 		<path name="gain-camcorder-mic">
 			<ctl name="IN1L Volume" value="14" />
-			<ctl name="IN1L Digital Volume" value="128" />
+			<ctl name="IN1L Digital Volume" value="150" />
 			<ctl name="LHPF1 Input 1 Volume" value="32" />
 		</path>
 
@@ -2054,7 +2054,7 @@
 		<!-- voice recording input volume -->
 		<path name="gain-recording-mic">
 			<ctl name="IN1L Volume" value="30" />
-			<ctl name="IN1L Digital Volume" value="128" />
+			<ctl name="IN1L Digital Volume" value="150" />
 			<ctl name="LHPF1 Input 1 Volume" value="30" />
 		</path>
 
