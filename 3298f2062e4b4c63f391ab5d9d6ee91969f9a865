@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a437d4f_aee23b01",
+        "filename": "configs/audio/mixer_paths_0.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 14934
+      },
+      "writtenOn": "2017-01-29T12:51:29Z",
+      "side": 1,
+      "message": "Why not: \u003cpath name\u003d\"speaker\" /\u003e\n\t \u003cpath name\u003d\"headphones\" /\u003e",
+      "range": {
+        "startLine": 156,
+        "startChar": 0,
+        "endLine": 159,
+        "endChar": 38
+      },
+      "revId": "3298f2062e4b4c63f391ab5d9d6ee91969f9a865",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
