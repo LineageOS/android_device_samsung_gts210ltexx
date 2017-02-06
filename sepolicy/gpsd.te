@@ -1,2 +1,2 @@
-# Allow rild to connect to gpsd
-unix_socket_connect(gpsd, property, rild)
+# Allow gpsd to connect to rild
+unix_socket_connect(gpsd, rild, rild)

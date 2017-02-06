@@ -1,2 +1,2 @@
-# Allow rild to connect to gpsd
-unix_socket_connect(audioserver, property, rild)
+# Allow audioserver to connect to rild
+unix_socket_connect(audioserver, rild, rild)
