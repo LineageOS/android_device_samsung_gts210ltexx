@@ -8,6 +8,7 @@ TARGET_KERNEL_CONFIG := cm_exynos5433-gts210lte_defconfig
 
 # RIL
 BOARD_MODEM_TYPE := ss333
+BOARD_PROVIDES_LIBRIL := true
 
 # RIL.java overwrite
 BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
