@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "7a288981_82b4fcf2",
+        "filename": "ril/telephony/java/com/android/internal/telephony/SlteRIL.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 289,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2017-02-09T13:05:45Z",
+      "side": 1,
+      "message": "I decompiled the stock RILJ stack, the leading \u0027+\u0027 for TOA is only appended if uusInfoPresent !\u003d 0 there.",
+      "parentUuid": "7a288981_1ff50983",
+      "revId": "5ed95bf7f51106efa87e87cbbc305858c49168d0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a288981_fff11d96",
         "filename": "ril/telephony/java/com/android/internal/telephony/SlteRIL.java",
         "patchSetId": 1
