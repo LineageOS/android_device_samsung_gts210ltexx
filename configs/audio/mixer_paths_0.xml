@@ -407,6 +407,11 @@
 
   <!-- Paths for the audio HAL (we map this to the Samsung paths) -->
 
+  <path name="earpiece">
+    <path name="media-handset" />
+    <path name="gain-media-handset" />
+  </path>
+
   <path name="speaker">
     <path name="media-speaker" />
     <path name="gain-media-speaker" />
@@ -422,7 +427,7 @@
     <path name="gain-media-speaker-headset" />
   </path>
 
-  <path name="voice-handset">
+  <path name="voice-earpiece">
     <path name="incall_nb-handset" />
     <path name="gain-incall_nb-handset" />
   </path>
@@ -452,7 +457,7 @@
 
   <!-- Input stage -->
 
-  <path name="handset-mic">
+  <path name="earpiece-mic">
     <path name="media-mic" />
     <path name="gain-media-mic" />
   </path>
