@@ -218,6 +218,31 @@
     <path name="incall_nb-headset" />
   </path>
 
+  <path name="incall_wb-handset">
+    <!-- TODO: We will make this -->
+  </path>
+
+  <path name="incall_wb-speaker">
+    <ctl name="AIF2 Mode" value="Slave" />
+    <ctl name="ASRC RATE 2" value="ASYNCCLK rate 2" />
+    <ctl name="ISRC2INT1 Input" value="AIF2RX1" />
+    <ctl name="ISRC2INT2 Input" value="AIF2RX1" />
+    <ctl name="ASRC2L Input" value="ISRC2INT1" />
+    <ctl name="ASRC2R Input" value="ISRC2INT2" />
+    <ctl name="SPKOUTL Input 1" value="AIF1RX1" />
+    <ctl name="SPKOUTR Input 1" value="AIF1RX2" />
+    <ctl name="SPKOUTL Input 3" value="ASRC2L" />
+    <ctl name="SPKOUTR Input 3" value="ASRC2R" />
+    <ctl name="SPK Switch" value="1" />
+    <!-- Call recording route -->
+    <ctl name="AIF1TX1 Input 2" value="ASRC2L" />
+    <ctl name="AIF1TX2 Input 2" value="ASRC2R" />
+  </path>
+
+  <path name="incall_wb-headphone">
+    <path name="incall_nb-headphone" />
+  </path>
+
   <path name="main-mic">
     <ctl name="IN1L Mux" value="B" />
     <ctl name="LHPF1 Input 1" value="IN1L" />
@@ -278,6 +303,10 @@
     <path name="media-headset-mic" />
   </path>
 
+  <path name="incall_nb-handset-mic">
+    <!-- TODO: We will make this -->
+  </path>
+
   <path name="incall_nb-speaker-mic">
     <ctl name="IN1L Mux" value="B" />
     <ctl name="ASRC RATE 1" value="SYNCCLK rate 1" />
@@ -307,6 +336,18 @@
     <!-- Call recording route -->
     <ctl name="AIF1TX1 Input 1" value="LHPF1" />
     <ctl name="AIF1TX2 Input 1" value="LHPF1" />
+  </path>
+
+  <path name="incall_wb-handset-mic">
+    <!-- TODO: We will make this -->
+  </path>
+
+  <path name="incall_wb-speaker-mic">
+    <path name="incall_nb-speaker-mic" />
+  </path>
+
+  <path name="incall_wb-headset-mic">
+    <path name="incall_nb-headset-mic" />
   </path>
 
   <!-- Volumes from the Samsung stock config -->
@@ -370,6 +411,34 @@
     <ctl name="HPOUTR Input 2 Volume" value="32" />
   </path>
 
+  <path name="gain-incall_wb-handset">
+    <!-- TODO: We will make this -->
+  </path>
+
+  <path name="gain-incall_wb-speaker">
+    <ctl name="Speaker Digital Volume" value="128" />
+    <ctl name="SPKOUTL Input 1 Volume" value="32" />
+    <ctl name="SPKOUTR Input 1 Volume" value="32" />
+  </path>
+
+  <path name="gain-incall_wb-headset">
+    <ctl name="Noise Gate Switch" value="0" />
+    <ctl name="HPOUT Digital Volume" value="127" />
+    <ctl name="HPOUTL Input 1 Volume" value="32" />
+    <ctl name="HPOUTR Input 1 Volume" value="32" />
+    <ctl name="HPOUTL Input 2 Volume" value="32" />
+    <ctl name="HPOUTR Input 2 Volume" value="32" />
+  </path>
+
+  <path name="gain-incall_wb-headphone">
+    <ctl name="Noise Gate Switch" value="0" />
+    <ctl name="HPOUT Digital Volume" value="127" />
+    <ctl name="HPOUTL Input 1 Volume" value="32" />
+    <ctl name="HPOUTR Input 1 Volume" value="32" />
+    <ctl name="HPOUTL Input 2 Volume" value="32" />
+    <ctl name="HPOUTR Input 2 Volume" value="32" />
+  </path>
+
   <path name="gain-media-mic">
     <ctl name="IN1L Volume" value="30" />
     <ctl name="IN1L Digital Volume" value="150" />
@@ -393,6 +462,10 @@
     <ctl name="LHPF1 Input 1 Volume" value="32" />
   </path>
 
+  <path name="gain-incall_nb-handset-mic">
+    <!-- TODO: We will make this -->
+  </path>
+
   <path name="gain-incall_nb-speaker-mic">
     <ctl name="IN1L Volume" value="20" />
     <ctl name="IN1L Digital Volume" value="128" />
@@ -400,6 +473,22 @@
   </path>
 
   <path name="gain-incall_nb-headset-mic">
+    <ctl name="IN2 Volume" value="21" />
+    <ctl name="IN2 Digital Volume" value="128" />
+    <ctl name="LHPF1 Input 1 Volume" value="32" />
+  </path>
+
+  <path name="gain-incall_wb-handset-mic">
+    <!-- TODO: We will make this -->
+  </path>
+
+  <path name="gain-incall_wb-speaker-mic">
+    <ctl name="IN1L Volume" value="20" />
+    <ctl name="IN1L Digital Volume" value="128" />
+    <ctl name="LHPF1 Input 1 Volume" value="32" />
+  </path>
+
+  <path name="gain-incall_wb-headset-mic">
     <ctl name="IN2 Volume" value="21" />
     <ctl name="IN2 Digital Volume" value="128" />
     <ctl name="LHPF1 Input 1 Volume" value="32" />
@@ -442,6 +531,21 @@
     <path name="gain-incall_nb-headphone" />
   </path>
 
+  <path name="voice-earpiece-wb">
+    <path name="incall_wb-handset" />
+    <path name="gain-incall_wb-handset" />
+  </path>
+
+  <path name="voice-speaker-wb">
+    <path name="incall_wb-speaker" />
+    <path name="gain-incall_wb-speaker" />
+  </path>
+
+  <path name="voice-headphones-wb">
+    <path name="incall_wb-headphone" />
+    <path name="gain-incall_wb-headphone" />
+  </path>
+
   <path name="hdmi">
     <!-- TODO -->
   </path>
@@ -474,6 +578,16 @@
   </path>
   -->
 
+  <path name="voice-mic">
+    <path name="incall_nb-handset-mic" />
+    <path name="gain-incall_nb-handset-mic" />
+  </path>
+
+  <path name="voice-earpiece-mic">
+    <path name="incall_nb-handset-mic" />
+    <path name="gain-incall_nb-handset-mic" />
+  </path>
+
   <path name="voice-speaker-mic">
     <path name="incall_nb-speaker-mic" />
     <path name="gain-incall_nb-speaker-mic" />
@@ -482,6 +596,21 @@
   <path name="voice-headset-mic">
     <path name="incall_nb-headset-mic" />
     <path name="gain-incall_nb-headset-mic" />
+  </path>
+
+  <path name="voice-earpiece-mic-wb">
+    <path name="incall_wb-handset-mic" />
+    <path name="gain-incall_wb-handset-mic" />
+  </path>
+
+  <path name="voice-speaker-mic-wb">
+    <path name="incall_wb-speaker-mic" />
+    <path name="gain-incall_wb-speaker-mic" />
+  </path>
+
+  <path name="voice-headset-mic-wb">
+    <path name="incall_wb-headset-mic" />
+    <path name="gain-incall_wb-headset-mic" />
   </path>
 
   <path name="hdmi-mic">
