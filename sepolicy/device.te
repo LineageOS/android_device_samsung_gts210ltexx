@@ -1,0 +1,2 @@
+# /dev/umts_boot*, /dev/ehci_power
+type mif_device, dev_type;
