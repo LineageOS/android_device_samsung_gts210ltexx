@@ -5892,6 +5892,7 @@ typedef struct {
 /* SNDMGR */
 
 #define RIL_UNSOL_SNDMGR_WB_AMR_REPORT 20017
+#define RIL_UNSOL_SNDMGR_CLOCK_CTRL 20022
 
 /***********************************************************************/
 
