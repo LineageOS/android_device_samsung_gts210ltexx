@@ -22,6 +22,6 @@
 ####################################
 # deamons
 #
-/system/bin/modemloader      -- u:object_r:modemloader_exec:s0
+/system/bin/modemloader      u:object_r:modemloader_exec:s0
 
-/system/bin/cbd              -- u:object_r:cpboot-daemon_exec:s0
+/system/bin/cbd              u:object_r:cpboot-daemon_exec:s0
