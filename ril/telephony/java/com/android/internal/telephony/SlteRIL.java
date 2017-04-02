@@ -56,6 +56,7 @@ public class SlteRIL extends RIL {
     private static final int RIL_UNSOL_DUN_PIN_CONTROL_SIGNAL = 11011;
     private static final int RIL_UNSOL_DATA_SUSPEND_RESUME = 11012;
     private static final int RIL_UNSOL_SIM_PB_READY = 11021;
+    private static final int RIL_UNSOL_SIM_SWAP_STATE_CHANGED = 11057;
 
     private static final int RIL_UNSOL_WB_AMR_STATE = 20017;
     private static final int RIL_UNSOL_SNDMGR_CLOCK_CTRL = 20022;
@@ -432,6 +433,9 @@ public class SlteRIL extends RIL {
                        "XMM7260: ignoring unsolicited response " +
                        origResponse);
                 return;
+            case RIL_UNSOL_SIM_SWAP_STATE_CHANGED:
+                newResponse = RIL_UNSOL_RESPONSE_SIM_STATUS_CHANGED;
+                break;
         }
 
         if (newResponse != origResponse) {
