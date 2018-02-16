@@ -11,6 +11,5 @@ ro.ril.hsxpa=1
 ro.ril.gprsclass=10
 ro.ril.telephony.mqanelements=6
 ro.telephony.default_network=9
-ro.telephony.ril_class=SlteRIL
 
 persist.radio.sib16_support=0

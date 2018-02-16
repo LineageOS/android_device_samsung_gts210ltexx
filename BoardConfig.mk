@@ -14,9 +14,6 @@ TARGET_KERNEL_CONFIG := lineage_gts210lte_defconfig
 BOARD_MODEM_TYPE := ss333
 BOARD_PROVIDES_LIBRIL := true
 
-# RIL.java overwrite
-BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
-
 # Recovery
 TARGET_OTA_ASSERT_DEVICE := gts210lte,gts210ltexx
 RECOVERY_TOUCHSCREEN_SWAP_XY := true
