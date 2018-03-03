@@ -7,7 +7,7 @@ LOCAL_PATH := device/samsung/gts210ltexx
 TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 
 # Kernel
-TARGET_KERNEL_CONFIG := cm_exynos5433-gts210lte_defconfig
+TARGET_KERNEL_CONFIG := lineage_gts210lte_defconfig
 
 # RIL
 BOARD_MODEM_TYPE := ss333
