@@ -1,3 +1,4 @@
+DEVICE_PACKAGE_OVERLAYS += device/samsung/gts210ltexx/overlay
 LOCAL_PATH := device/samsung/gts210ltexx
 
 # Ramdisk
